@@ -1,0 +1,180 @@
+/*=== fuentes ===*/
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins&display=swap');
+
+/*=== Aplicando CSS Global===*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+
+body{
+    font-family: poppins;
+    background-color: #eff5f5ff;
+}
+
+h1 {
+    font-family: Belanosima;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*=== Aplicando CSS a clases===*/
+#logo{
+    width: 150px;
+    margin: auto;
+    padding-top: 10px;
+    padding-right: 3rem;
+}
+
+#barrasuperior {
+    width: 100%;
+}
+
+#banner{
+    margin-top: 5rem;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#textobanner{
+    font-family: Belanosima;
+    font-size: 80px;
+    color: #FC7300;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-primary {
+    background-color: #FC7300;
+    border-color: #FC7300;
+}
+
+.contacto {
+    margin-left: 17rem;
+}
+
+.btn-primary:hover {
+    background-color: #00425A;
+    border-color: #00425A;
+}
+
+/*=== Footer===*/
+
+#piePagina{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 0.5fr;
+    justify-items: center;
+    background-color: #1f8a70ff;
+    color: white;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+#piePagina a:link{
+    color: #00425A;
+}
+#redessociales li{
+    padding: 10px;
+}
+
+ion-icon{
+    color: #00425A;
+    font-size: 2rem;
+}
+
+#mapita {
+    padding: 10px;
+}
+
+/*=== Aplicando comportamiento resposive o adaptativo===*/
+
+/*=== Trabajando con CSS-GRID===*/
+@media (min-width: 320px) {
+    #textobanner{
+        font-size: 50px;
+    }
+    #piePagina{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #quienessomos {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+    }
+    
+    #porquelegirnos {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem; 
+    }
+
+    #noticias {
+        display: grid;
+        grid-template-columns: 1fr;  
+        gap: 1rem;
+        padding-bottom: 3rem;
+    }
+}
+@media (min-width: 768px) { 
+
+    #piePagina{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 0.5fr;
+    }
+    #quienessomos {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-top: 1rem;
+    }
+    
+    #porquelegirnos {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin-top: 1rem; 
+    }
+    #noticias {
+        display: grid;
+        grid-template-columns: 2fr 1fr;  
+        gap: 1rem;
+        padding-bottom: 3rem;
+    }
+}
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    #quienessomos {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-top: 1rem;
+        gap: 3rem;
+    }
+    
+    #porquelegirnos {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin-top: 1rem; 
+    }
+
+    #noticias {
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;  
+        gap: 1rem;
+        padding-bottom: 3rem;
+    }
+}
+
+
+
+

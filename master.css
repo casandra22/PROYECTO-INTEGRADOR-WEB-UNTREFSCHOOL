@@ -25,6 +25,11 @@ h1 {
     color: _#181823ff;
 }
 
+h3 {
+    font-family: Belanosima;
+    color: _#181823ff;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -52,11 +57,29 @@ html{
     font-family: Belanosima;
     font-size: 80px;
     color: #FC7300;
-    background-color: #eff5f5ff;
+    background-color: rgb(255, 255, 255, 0.5);
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+#propuestaeducativa a{
+    color:#00425A;
+    text-decoration: none;
+}
+
+#itempropuesta {
+    width: 80%;
+    text-align: center;
+}
+#itempropuesta img:hover {
+    transform: scale(0.9);
+}
+
+.formulario {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .btn-primary {
@@ -64,9 +87,18 @@ html{
     border-color: #FC7300;
 }
 
-.contacto {
-    margin-left: 17rem;
+.enviarmensaje {
+    color: #eff5f5ff;
+    background-color: #00425A;
+    border-color: #00425A; 
+    margin-top: 1rem; 
 }
+.enviarmensaje:hover {
+    background-color: #FC7300;
+    border-color: #FC7300;
+    color: #eff5f5ff;
+}
+
 
 .btn-primary:hover {
     background-color: #00425A;
@@ -104,9 +136,11 @@ ion-icon{
 
 /*=== Trabajando con CSS-GRID===*/
 @media (min-width: 320px) {
+    .contacto {
+        position: relative;
+    }
     #textobanner{
-        font-size: 50px;
-        background-color: rgb(255, 255, 255, 0.5);
+        font-size: 30px;
     }
 
     #piePagina{
@@ -131,8 +165,16 @@ ion-icon{
         gap: 1rem;
         padding-bottom: 3rem;
     }
+    #propuestaeducativa {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
 }
 @media (min-width: 768px) { 
+    #textobanner{
+        font-size: 60px;
+    }
 
     #piePagina{
         display: grid;
@@ -155,6 +197,9 @@ ion-icon{
         gap: 1rem;
         padding-bottom: 3rem;
     }
+    .contacto {
+        position: relative;
+    }
 }
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
@@ -176,6 +221,17 @@ ion-icon{
         grid-template-columns: 3fr 3fr 3fr;  
         gap: 1rem;
         padding-bottom: 3rem;
+    }
+    .contacto {
+        position: absolute;
+        right: 0px;
+        width: 300px;
+        padding: 10px;
+    }
+    #propuestaeducativa {
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        padding: 50px;
     }
 }
 
